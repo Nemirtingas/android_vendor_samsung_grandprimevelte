@@ -18,4 +18,33 @@
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/egl/libEGL_MRVL.so:system/vendor/lib/egl/libEGL_MRVL.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/egl/libGLESv1_CM_MRVL.so:system/vendor/lib/egl/libGLESv1_CM_MRVL.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/egl/libGLESv2_MRVL.so:system/vendor/lib/egl/libGLESv2_MRVL.so
+    $(LOCAL_PATH)/proprietary/vendor/lib/egl/libGLESv2_MRVL.so:system/vendor/lib/egl/libGLESv2_MRVL.so \
+    $(LOCAL_PATH)/proprietary/lib/libGAL.so:system/lib/libGAL.so \
+    $(LOCAL_PATH)/proprietary/lib/libGLSLC.so:system/lib/libGLSLC.so \
+    $(LOCAL_PATH)/proprietary/lib/libVSC.so:system/lib/libVSC.so \
+    $(LOCAL_PATH)/proprietary/lib/libgputex.so:system/lib/libgputex.so
+
+# Hardware
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/lib/hw/audio.a2dp.default.so:system/lib/hw/audio.a2dp.default.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/audio.primary.default.so:system/lib/hw/audio.primary.default.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/audio.primary.mrvl.so:system/lib/hw/audio.primary.mrvl.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/audio.r_submix.default.so:system/lib/hw/audio.r_submix.default.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/audio.usb.default.so:system/lib/hw/audio.usb.default.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/audio_policy.default.so:system/lib/hw/audio_policy.default.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/camera.mrvl.so:system/lib/hw/camera.mrvl.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/gps.mrvl.so:system/lib/hw/gps.mrvl.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/gralloc.mrvl.so:system/lib/hw/gralloc.mrvl.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/hwcomposer.mrvl.so:system/lib/hw/hwcomposer.mrvl.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/keystore.default.so:system/lib/hw/keystore.default.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/keystore.mrvl.so:system/lib/hw/keystore.mrvl.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/lights.mrvl.so:system/lib/hw/lights.mrvl.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/local_time.default.so:system/lib/hw/local_time.default.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/memtrack.mrvl.so:system/lib/hw/memtrack.mrvl.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/nfc_nci.mrvl.so:system/lib/hw/nfc_nci.mrvl.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/power.default.so:system/lib/hw/power.default.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/power.mrvl.so:system/lib/hw/power.mrvl.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/sensors.mrvl.so:system/lib/hw/sensors.mrvl.so \
+    $(LOCAL_PATH)/proprietary/lib/hw/vibrator.default.so:system/lib/hw/vibrator.default.so
