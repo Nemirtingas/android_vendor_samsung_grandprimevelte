@@ -147,6 +147,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/nfc_nci.mrvl.so:system/lib/hw/nfc_nci.mrvl.so
 
+# Wifi
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant
+
 # Power
 #lib/hw/power.default.so
 #lib/hw/power.mrvl.so
