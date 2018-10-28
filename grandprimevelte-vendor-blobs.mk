@@ -38,15 +38,15 @@ PRODUCT_COPY_FILES += \
 # Bluetooth
 #    $(LOCAL_PATH)/proprietary/lib/libMarvellWireless.so:system/lib/libMarvellWireless.so \
 
-#PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
-    $(LOCAL_PATH)/proprietary/lib/libbt-iopdb.so:system/lib/libbt-iopdb.so \
-    $(LOCAL_PATH)/proprietary/lib/libbt-iopdb_mod.so:system/lib/libbt-iopdb_mod.so \
-    $(LOCAL_PATH)/proprietary/lib/libedmnativehelper.so:system/lib/libedmnativehelper.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so \
-    $(LOCAL_PATH)/proprietary/lib/libbt-codec_aptx.so:system/lib/libbt-codec_aptx.so \
-    $(LOCAL_PATH)/proprietary/lib/libbt-aptx-4.0.3.so:system/lib/libbt-aptx-4.0.3.so \
-    $(LOCAL_PATH)/proprietary/lib/libbt-codec_sshd.so:system/lib/libbt-codec_sshd.so
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so
+#    $(LOCAL_PATH)/proprietary/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
+#    $(LOCAL_PATH)/proprietary/lib/libbt-iopdb.so:system/lib/libbt-iopdb.so \
+#    $(LOCAL_PATH)/proprietary/lib/libbt-iopdb_mod.so:system/lib/libbt-iopdb_mod.so \
+#    $(LOCAL_PATH)/proprietary/lib/libedmnativehelper.so:system/lib/libedmnativehelper.so \
+#    $(LOCAL_PATH)/proprietary/lib/libbt-codec_aptx.so:system/lib/libbt-codec_aptx.so \
+#    $(LOCAL_PATH)/proprietary/lib/libbt-aptx-4.0.3.so:system/lib/libbt-aptx-4.0.3.so \
+#    $(LOCAL_PATH)/proprietary/lib/libbt-codec_sshd.so:system/lib/libbt-codec_sshd.so
 
 # Camera
 PRODUCT_COPY_FILES += \
@@ -71,6 +71,7 @@ PRODUCT_COPY_FILES += \
 
 # GPS
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/bin/gpslpm_srv:system/bin/gpslpm_srv \
     $(LOCAL_PATH)/proprietary/lib/hw/gps.mrvl.so:system/lib/hw/gps.mrvl.so \
     $(LOCAL_PATH)/proprietary/lib/libagps_hal.so:system/lib/libagps_hal.so \
     $(LOCAL_PATH)/proprietary/lib/libmtelif.so:system/lib/libmtelif.so \
@@ -130,7 +131,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/copy_nvm.sh:system/bin/copy_nvm.sh \
     $(LOCAL_PATH)/proprietary/bin/backup_log.sh:system/bin/backup_log.sh \
     $(LOCAL_PATH)/proprietary/lib/libMILV.so:system/lib/libMILV.so \
-    $(LOCAL_PATH)/proprietary/lib/libwtpsp_ss.so:system/lib/libwtpsp_ss.so
+    $(LOCAL_PATH)/proprietary/lib/libwtpsp_ss.so:system/lib/libwtpsp_ss.so \
+    $(LOCAL_PATH)/proprietary/lib/libatchannel.so:system/lib/libatchannel.so \
+    $(LOCAL_PATH)/proprietary/lib/libatserver.so:system/lib/libatserver.so
 
 # Time
 PRODUCT_COPY_FILES += \
