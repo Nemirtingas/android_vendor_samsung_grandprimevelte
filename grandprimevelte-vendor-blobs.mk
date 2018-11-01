@@ -36,10 +36,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/audio.usb.default.so:system/lib/hw/audio.usb.default.so
 
 # Bluetooth
+#PRODUCT_COPY_FILES += \
 #    $(LOCAL_PATH)/proprietary/lib/libMarvellWireless.so:system/lib/libMarvellWireless.so \
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so
+#    $(LOCAL_PATH)/proprietary/vendor/lib/libbt-vendor.so:system/vendor/lib/libbt-vendor.so
 #    $(LOCAL_PATH)/proprietary/lib/hw/bluetooth.default.so:system/lib/hw/bluetooth.default.so \
 #    $(LOCAL_PATH)/proprietary/lib/libbt-iopdb.so:system/lib/libbt-iopdb.so \
 #    $(LOCAL_PATH)/proprietary/lib/libbt-iopdb_mod.so:system/lib/libbt-iopdb_mod.so \
@@ -58,7 +57,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libcodeccoda7542enc.so:system/lib/libcodeccoda7542enc.so \
     $(LOCAL_PATH)/proprietary/lib/libLENCMerge.so:system/lib/libLENCMerge.so \
     $(LOCAL_PATH)/proprietary/lib/libcoda7542.so:system/lib/libcoda7542.so \
-    $(LOCAL_PATH)/proprietary/lib/libmvmem.so:system/lib/libmvmem.so \
     $(LOCAL_PATH)/proprietary/lib/libcoda7542hal.so:system/lib/libcoda7542hal.so \
     $(LOCAL_PATH)/proprietary/lib/libcodecjpegdec.so:system/lib/libcodecjpegdec.so \
     $(LOCAL_PATH)/proprietary/lib/libcodecjpegenc.so:system/lib/libcodecjpegenc.so \
@@ -91,11 +89,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libGAL.so:system/lib/libGAL.so \
     $(LOCAL_PATH)/proprietary/lib/libgputex.so:system/lib/libgputex.so \
     $(LOCAL_PATH)/proprietary/lib/libVSC.so:system/lib/libVSC.so \
+    $(LOCAL_PATH)/proprietary/lib/libmvmem.so:system/lib/libmvmem.so \
     $(LOCAL_PATH)/proprietary/lib/libGLSLC.so:system/lib/libGLSLC.so
 
 # Keystore
+#    $(LOCAL_PATH)/proprietary/lib/hw/keystore.default.so:system/lib/hw/keystore.default.so \
+
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/hw/keystore.default.so:system/lib/hw/keystore.default.so \
     $(LOCAL_PATH)/proprietary/lib/hw/keystore.mrvl.so:system/lib/hw/keystore.mrvl.so \
     $(LOCAL_PATH)/proprietary/lib/libtee_client.so:system/lib/libtee_client.so
 
@@ -106,15 +106,14 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/bin/cploader:system/bin/cploader \
     $(LOCAL_PATH)/proprietary/bin/rild:system/bin/rild \
     $(LOCAL_PATH)/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
     $(LOCAL_PATH)/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
-    $(LOCAL_PATH)/proprietary/bin/cploader:system/bin/cploader \
     $(LOCAL_PATH)/proprietary/bin/tel_launch.sh:system/bin/tel_launch.sh \
     $(LOCAL_PATH)/proprietary/bin/run_composite.sh:system/bin/run_composite.sh \
     $(LOCAL_PATH)/proprietary/bin/backup_log.sh:system/bin/backup_log.sh \
     $(LOCAL_PATH)/proprietary/bin/gpslpm_srv:system/bin/gpslpm_srv \
-    $(LOCAL_PATH)/proprietary/bin/cploader:system/bin/cploader \
     $(LOCAL_PATH)/proprietary/bin/mfgloader:system/bin/mfgloader \
     $(LOCAL_PATH)/proprietary/bin/macloader:system/bin/macloader \
     $(LOCAL_PATH)/proprietary/bin/telmon:system/bin/telmon \
@@ -133,7 +132,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libMILV.so:system/lib/libMILV.so \
     $(LOCAL_PATH)/proprietary/lib/libwtpsp_ss.so:system/lib/libwtpsp_ss.so \
     $(LOCAL_PATH)/proprietary/lib/libatchannel.so:system/lib/libatchannel.so \
-    $(LOCAL_PATH)/proprietary/lib/libatserver.so:system/lib/libatserver.so
+    $(LOCAL_PATH)/proprietary/lib/libatserver.so:system/lib/libatserver.so \
+    $(LOCAL_PATH)/proprietary/bin/at_distributor:system/bin/at_distributor \
+    $(LOCAL_PATH)/proprietary/lib/libatparser.so:system/lib/libatparser.so \
+    $(LOCAL_PATH)/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
+    $(LOCAL_PATH)/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so
 
 # Time
 PRODUCT_COPY_FILES += \
@@ -148,8 +151,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/nfc_nci.mrvl.so:system/lib/hw/nfc_nci.mrvl.so
 
 # Wifi
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant
+#PRODUCT_COPY_FILES += \
+#    $(LOCAL_PATH)/proprietary/bin/wpa_supplicant:system/bin/wpa_supplicant
 
 # Power
 #lib/hw/power.default.so
