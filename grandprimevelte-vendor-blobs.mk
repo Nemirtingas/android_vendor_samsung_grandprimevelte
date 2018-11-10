@@ -105,10 +105,7 @@ PRODUCT_COPY_FILES += \
 
 # RIL
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
     $(LOCAL_PATH)/proprietary/bin/cploader:system/bin/cploader \
-    $(LOCAL_PATH)/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
-    $(LOCAL_PATH)/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
     $(LOCAL_PATH)/proprietary/bin/tel_launch.sh:system/bin/tel_launch.sh \
     $(LOCAL_PATH)/proprietary/bin/run_composite.sh:system/bin/run_composite.sh \
     $(LOCAL_PATH)/proprietary/bin/backup_log.sh:system/bin/backup_log.sh \
@@ -128,11 +125,15 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/run_composite.sh:system/bin/run_composite.sh \
     $(LOCAL_PATH)/proprietary/bin/copy_nvm.sh:system/bin/copy_nvm.sh \
     $(LOCAL_PATH)/proprietary/bin/backup_log.sh:system/bin/backup_log.sh \
+    $(LOCAL_PATH)/proprietary/bin/at_distributor:system/bin/at_distributor \
+    $(LOCAL_PATH)/proprietary/bin/prepare_param.sh:system/bin/prepare_param.sh \
     $(LOCAL_PATH)/proprietary/lib/libMILV.so:system/lib/libMILV.so \
     $(LOCAL_PATH)/proprietary/lib/libwtpsp_ss.so:system/lib/libwtpsp_ss.so \
     $(LOCAL_PATH)/proprietary/lib/libatchannel.so:system/lib/libatchannel.so \
     $(LOCAL_PATH)/proprietary/lib/libatserver.so:system/lib/libatserver.so \
-    $(LOCAL_PATH)/proprietary/bin/at_distributor:system/bin/at_distributor \
+    $(LOCAL_PATH)/proprietary/lib/libsecril-client.so:system/lib/libsecril-client.so \
+    $(LOCAL_PATH)/proprietary/lib/libsec-ril.so:system/lib/libsec-ril.so \
+    $(LOCAL_PATH)/proprietary/lib/libsec-ril-dsds.so:system/lib/libsec-ril-dsds.so \
     $(LOCAL_PATH)/proprietary/lib/libatparser.so:system/lib/libatparser.so \
     $(LOCAL_PATH)/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     $(LOCAL_PATH)/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so
