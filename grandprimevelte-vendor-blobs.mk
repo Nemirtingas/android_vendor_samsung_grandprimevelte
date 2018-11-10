@@ -168,13 +168,13 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/vibrator.default.so:system/lib/hw/vibrator.default.so \
     $(LOCAL_PATH)/proprietary/lib/libwvm.so:system/lib/libwvm.so 
 
+#    $(LOCAL_PATH)/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
 # Vendor libs
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/Khronos/OpenCL/vendors/ocl32_mrvl.icd:system/vendor/Khronos/OpenCL/vendors/ocl32_mrvl.icd \
     $(LOCAL_PATH)/proprietary/vendor/firmware/sec_s3fwrn7_firmware.bin:system/vendor/firmware/sec_s3fwrn7_firmware.bin \
     $(LOCAL_PATH)/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
-    $(LOCAL_PATH)/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
     $(LOCAL_PATH)/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     $(LOCAL_PATH)/proprietary/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     $(LOCAL_PATH)/proprietary/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd \
