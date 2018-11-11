@@ -47,9 +47,9 @@ PRODUCT_COPY_FILES += \
 #    $(LOCAL_PATH)/proprietary/lib/libbt-aptx-4.0.3.so:system/lib/libbt-aptx-4.0.3.so \
 #    $(LOCAL_PATH)/proprietary/lib/libbt-codec_sshd.so:system/lib/libbt-codec_sshd.so
 
-#    $(LOCAL_PATH)/proprietary/lib/hw/camera.mrvl.so:system/lib/hw/camera.mrvl.so \
 # Camera
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/lib/hw/camera.mrvl.so:system/lib/hw/camera.mrvl.so \
     $(LOCAL_PATH)/proprietary/lib/libcameraengine.so:system/lib/libcameraengine.so \
     $(LOCAL_PATH)/proprietary/lib/libFaceDetect.so:system/lib/libFaceDetect.so \
     $(LOCAL_PATH)/proprietary/lib/libFlickerDetect.so:system/lib/libFlickerDetect.so \
@@ -65,7 +65,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libPyramidUVDNS.so:system/lib/libPyramidUVDNS.so \
     $(LOCAL_PATH)/proprietary/lib/libscenedetect.so:system/lib/libscenedetect.so \
     $(LOCAL_PATH)/proprietary/lib/libextsensorhal.so:system/lib/libextsensorhal.so \
-    $(LOCAL_PATH)/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so
+    $(LOCAL_PATH)/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
+    $(LOCAL_PATH)/proprietary/lib/libwvm.so:system/lib/libwvm.so 
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -75,6 +76,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libmtelif.so:system/lib/libmtelif.so \
     $(LOCAL_PATH)/proprietary/lib/libmtel.so:system/lib/libmtel.so
 
+#    $(LOCAL_PATH)/proprietary/lib/libmvmem.so:system/lib/libmvmem.so \
 # GPU
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
@@ -89,7 +91,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libGAL.so:system/lib/libGAL.so \
     $(LOCAL_PATH)/proprietary/lib/libgputex.so:system/lib/libgputex.so \
     $(LOCAL_PATH)/proprietary/lib/libVSC.so:system/lib/libVSC.so \
-    $(LOCAL_PATH)/proprietary/lib/libmvmem.so:system/lib/libmvmem.so \
     $(LOCAL_PATH)/proprietary/lib/libGLSLC.so:system/lib/libGLSLC.so
 
 # Keystore
@@ -100,7 +101,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libtee_client.so:system/lib/libtee_client.so
 
 # Lights
-#PRODUCT_COPY_FILES += \
+PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/lights.mrvl.so:system/lib/hw/lights.mrvl.so \
 
 # RIL
@@ -165,8 +166,7 @@ PRODUCT_COPY_FILES += \
 
 # Vibrator
 #PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/hw/vibrator.default.so:system/lib/hw/vibrator.default.so \
-    $(LOCAL_PATH)/proprietary/lib/libwvm.so:system/lib/libwvm.so 
+    $(LOCAL_PATH)/proprietary/lib/hw/vibrator.default.so:system/lib/hw/vibrator.default.so
 
 #    $(LOCAL_PATH)/proprietary/vendor/lib/mediadrm/libdrmclearkeyplugin.so:system/vendor/lib/mediadrm/libdrmclearkeyplugin.so \
 # Vendor libs
