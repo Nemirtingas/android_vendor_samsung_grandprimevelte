@@ -76,7 +76,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libmtelif.so:system/lib/libmtelif.so \
     $(LOCAL_PATH)/proprietary/lib/libmtel.so:system/lib/libmtel.so
 
-#    $(LOCAL_PATH)/proprietary/lib/libmvmem.so:system/lib/libmvmem.so \
 # GPU
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
@@ -100,12 +99,11 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/keystore.mrvl.so:system/lib/hw/keystore.mrvl.so \
     $(LOCAL_PATH)/proprietary/lib/libtee_client.so:system/lib/libtee_client.so
 
-# Lights
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/hw/lights.mrvl.so:system/lib/hw/lights.mrvl.so \
-
 # RIL
 PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/bin/ddexe:system/bin/ddexe \
+    $(LOCAL_PATH)/proprietary/bin/at_distributor:system/bin/at_distributor \
+    $(LOCAL_PATH)/proprietary/bin/at_router:system/bin/at_router \
     $(LOCAL_PATH)/proprietary/bin/cploader:system/bin/cploader \
     $(LOCAL_PATH)/proprietary/bin/tel_launch.sh:system/bin/tel_launch.sh \
     $(LOCAL_PATH)/proprietary/bin/run_composite.sh:system/bin/run_composite.sh \
@@ -117,7 +115,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/nvm:system/bin/nvm \
     $(LOCAL_PATH)/proprietary/bin/diag:system/bin/diag \
     $(LOCAL_PATH)/proprietary/bin/pppmodem:system/bin/pppmodem \
-    $(LOCAL_PATH)/proprietary/bin/at_router:system/bin/at_router \
     $(LOCAL_PATH)/proprietary/bin/IMLLog:system/bin/IMLLog \
     $(LOCAL_PATH)/proprietary/bin/eeh:system/bin/eeh \
     $(LOCAL_PATH)/proprietary/bin/nvmcp:system/bin/nvmcp \
@@ -126,7 +123,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/run_composite.sh:system/bin/run_composite.sh \
     $(LOCAL_PATH)/proprietary/bin/copy_nvm.sh:system/bin/copy_nvm.sh \
     $(LOCAL_PATH)/proprietary/bin/backup_log.sh:system/bin/backup_log.sh \
-    $(LOCAL_PATH)/proprietary/bin/at_distributor:system/bin/at_distributor \
     $(LOCAL_PATH)/proprietary/bin/prepare_param.sh:system/bin/prepare_param.sh \
     $(LOCAL_PATH)/proprietary/lib/libMILV.so:system/lib/libMILV.so \
     $(LOCAL_PATH)/proprietary/lib/libwtpsp_ss.so:system/lib/libwtpsp_ss.so \
