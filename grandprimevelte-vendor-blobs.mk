@@ -32,7 +32,6 @@ PRODUCT_COPY_FILES += \
 
 # Camera
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/hw/camera.stock.mrvl.so:system/lib/hw/camera.stock.mrvl.so \
     $(LOCAL_PATH)/proprietary/lib/libcameraengine.so:system/lib/libcameraengine.so \
     $(LOCAL_PATH)/proprietary/lib/libFaceDetect.so:system/lib/libFaceDetect.so \
     $(LOCAL_PATH)/proprietary/lib/libFlickerDetect.so:system/lib/libFlickerDetect.so \
@@ -54,23 +53,16 @@ PRODUCT_COPY_FILES += \
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/bin/gpslpm_srv:system/bin/gpslpm_srv \
-    $(LOCAL_PATH)/proprietary/lib/hw/gps.mrvl.so:system/lib/hw/gps.mrvl.so \
     $(LOCAL_PATH)/proprietary/lib/libagps_hal.so:system/lib/libagps_hal.so \
     $(LOCAL_PATH)/proprietary/lib/libmtelif.so:system/lib/libmtelif.so \
     $(LOCAL_PATH)/proprietary/lib/libmtel.so:system/lib/libmtel.so
 
 # GPU
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/hw/gralloc.default.so:system/lib/hw/gralloc.default.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/gralloc.mrvl.so:system/lib/hw/gralloc.mrvl.so \
-    $(LOCAL_PATH)/proprietary/lib/hw/hwcomposer.mrvl.so:system/lib/hw/hwcomposer.mrvl.so \
-    $(LOCAL_PATH)/proprietary/lib/libHWComposerGC.so:system/lib/libHWComposerGC.so \
     $(LOCAL_PATH)/proprietary/lib/egl/libEGL_MRVL.so:system/lib/egl/libEGL_MRVL.so \
     $(LOCAL_PATH)/proprietary/lib/egl/libGLESv1_CM_MRVL.so:system/lib/egl/libGLESv1_CM_MRVL.so \
     $(LOCAL_PATH)/proprietary/lib/egl/libGLESv2_MRVL.so:system/lib/egl/libGLESv2_MRVL.so \
-    $(LOCAL_PATH)/proprietary/lib/libgcu.so:system/lib/libgcu.so \
     $(LOCAL_PATH)/proprietary/lib/libgpucsc.so:system/lib/libgpucsc.so \
-    $(LOCAL_PATH)/proprietary/lib/libGAL.so:system/lib/libGAL.so \
     $(LOCAL_PATH)/proprietary/lib/libgputex.so:system/lib/libgputex.so \
     $(LOCAL_PATH)/proprietary/lib/libVSC.so:system/lib/libVSC.so \
     $(LOCAL_PATH)/proprietary/lib/libGLSLC.so:system/lib/libGLSLC.so
@@ -115,10 +107,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libfactoryutil.so:system/lib/libfactoryutil.so \
     $(LOCAL_PATH)/proprietary/lib/libomission_avoidance.so:system/lib/libomission_avoidance.so
 
-# Memtrack
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/hw/memtrack.mrvl.so:system/lib/hw/memtrack.mrvl.so
-
 # NFC
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/nfc_nci.mrvl.so:system/lib/hw/nfc_nci.mrvl.so
@@ -129,30 +117,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libyasalgo.so:system/lib/libyasalgo.so \
 
 # Stagefright
-#warning: blob file libcodecddpdecwrapper.so missing or broken
-#warning: blob file libcodecffmpegac3dec.so missing or broken
 #PRODUCT_COPY_FILES += \
-	$(LOCAL_PATH)/proprietary/lib/libMrvlOmx.so:system/lib/libMrvlOmx.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodecaacdec.so:system/lib/libcodecaacdec.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodecaacenc.so:system/lib/libcodecaacenc.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodecamrnbdec.so:system/lib/libcodecamrnbdec.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodecamrnbenc.so:system/lib/libcodecamrnbenc.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodecamrwbdec.so:system/lib/libcodecamrwbdec.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodecamrwbenc.so:system/lib/libcodecamrwbenc.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodech263dec.so:system/lib/libcodech263dec.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodech263enc.so:system/lib/libcodech263enc.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodecmp3dec.so:system/lib/libcodecmp3dec.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodecmpeg2dec.so:system/lib/libcodecmpeg2dec.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodecwmadec.so:system/lib/libcodecwmadec.so \
-	$(LOCAL_PATH)/proprietary/lib/libippimgp.so:system/lib/libippimgp.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodecmpeg4dec.so:system/lib/libcodecmpeg4dec.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodech264dec.so:system/lib/libcodech264dec.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodech265dec.so:system/lib/libcodech265dec.so \
-	$(LOCAL_PATH)/proprietary/lib/libippmultiexec.so:system/lib/libippmultiexec.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodecmpeg4enc.so:system/lib/libcodecmpeg4enc.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodech264enc.so:system/lib/libcodech264enc.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodecwmvdec.so:system/lib/libcodecwmvdec.so \
-	$(LOCAL_PATH)/proprietary/lib/libcodeccoda7542dec.so:system/lib/libcodeccoda7542dec.so \
 	$(LOCAL_PATH)/proprietary/lib/libsrm.so:system/lib/libsrm.so \
 
 # Vendor libs
@@ -165,3 +130,59 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:system/vendor/lib/mediadrm/libwvdrmengine.so \
     $(LOCAL_PATH)/proprietary/vendor/media/LMspeed_508.emd:system/vendor/media/LMspeed_508.emd \
     $(LOCAL_PATH)/proprietary/vendor/media/PFFprec_600.emd:system/vendor/media/PFFprec_600.emd 
+
+# WIP: Stagefright
+#PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libMrvlOmx.so:system/lib/libMrvlOmx.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libarac.so:system/lib/libarac.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcoda7542.so:system/lib/libcoda7542.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcoda7542hal.so:system/lib/libcoda7542hal.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecIPC.so:system/lib/libcodecIPC.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecIPCservice.so:system/lib/libcodecIPCservice.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecaacdec.so:system/lib/libcodecaacdec.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecaacenc.so:system/lib/libcodecaacenc.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecamrnbdec.so:system/lib/libcodecamrnbdec.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecamrnbenc.so:system/lib/libcodecamrnbenc.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecamrwbdec.so:system/lib/libcodecamrwbdec.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecamrwbenc.so:system/lib/libcodecamrwbenc.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodeccoda7542dec.so:system/lib/libcodeccoda7542dec.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodeccoda7542enc.so:system/lib/libcodeccoda7542enc.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodech263dec.so:system/lib/libcodech263dec.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodech263enc.so:system/lib/libcodech263enc.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodech264dec.so:system/lib/libcodech264dec.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodech264enc.so:system/lib/libcodech264enc.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodech265dec.so:system/lib/libcodech265dec.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecjpegdec.so:system/lib/libcodecjpegdec.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecjpegenc.so:system/lib/libcodecjpegenc.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecmp3dec.so:system/lib/libcodecmp3dec.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecmpeg2dec.so:system/lib/libcodecmpeg2dec.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecmpeg4dec.so:system/lib/libcodecmpeg4dec.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecmpeg4enc.so:system/lib/libcodecmpeg4enc.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecwmadec.so:system/lib/libcodecwmadec.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libcodecwmvdec.so:system/lib/libcodecwmvdec.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libippimgp.so:system/lib/libippimgp.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libippmultiexec.so:system/lib/libippmultiexec.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsavsac.so:system/lib/libsavsac.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsavscmn.so:system/lib/libsavscmn.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsavsff.so:system/lib/libsavsff.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsavsmeta.so:system/lib/libsavsmeta.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsavsvc.so:system/lib/libsavsvc.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsnaace.so:system/lib/libsnaace.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsnamrnb.so:system/lib/libsnamrnb.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsnamrwb.so:system/lib/libsnamrwb.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsomx263dsw.so:system/lib/libsomx263dsw.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsomx264dsw.so:system/lib/libsomx264dsw.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsomxaacd.so:system/lib/libsomxaacd.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsomxaace.so:system/lib/libsomxaace.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsomxadpcmd.so:system/lib/libsomxadpcmd.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsomxamrd.so:system/lib/libsomxamrd.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsomxcmn.so:system/lib/libsomxcmn.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsomxcore.so:system/lib/libsomxcore.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsomxflacd.so:system/lib/libsomxflacd.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsomxhevcdsw.so:system/lib/libsomxhevcdsw.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsomxmp3d.so:system/lib/libsomxmp3d.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsomxmp4vdsw.so:system/lib/libsomxmp4vdsw.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsomxnaace.so:system/lib/libsomxnaace.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsomxvp8d.so:system/lib/libsomxvp8d.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libsxqk.so:system/lib/libsxqk.so \
+    $(LOCAL_PATH)/proprietary/lib/stagefright/libstagefrighthw.so:system/lib/libstagefrighthw.so
