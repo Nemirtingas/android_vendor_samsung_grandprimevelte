@@ -25,30 +25,9 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/libacm.so:system/lib/libacm.so \
     $(LOCAL_PATH)/proprietary/lib/libacoustic.so:system/lib/libacoustic.so \
     $(LOCAL_PATH)/proprietary/lib/libippsp.so:system/lib/libippsp.so \
-    $(LOCAL_PATH)/proprietary/lib/libmiscgen.so:system/lib/libmiscgen.so \
     $(LOCAL_PATH)/proprietary/lib/libippvp.so:system/lib/libippvp.so \
     $(LOCAL_PATH)/proprietary/lib/libaudiodebugtool.so:system/lib/libaudiodebugtool.so \
     $(LOCAL_PATH)/proprietary/lib/libvcm.so:system/lib/libvcm.so
-
-# Camera
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/libcameraengine.so:system/lib/libcameraengine.so \
-    $(LOCAL_PATH)/proprietary/lib/libFaceDetect.so:system/lib/libFaceDetect.so \
-    $(LOCAL_PATH)/proprietary/lib/libFlickerDetect.so:system/lib/libFlickerDetect.so \
-    $(LOCAL_PATH)/proprietary/lib/libb52sensorhal.so:system/lib/libb52sensorhal.so \
-    $(LOCAL_PATH)/proprietary/lib/libcodeccoda7542enc.so:system/lib/libcodeccoda7542enc.so \
-    $(LOCAL_PATH)/proprietary/lib/libLENCMerge.so:system/lib/libLENCMerge.so \
-    $(LOCAL_PATH)/proprietary/lib/libcoda7542.so:system/lib/libcoda7542.so \
-    $(LOCAL_PATH)/proprietary/lib/libcoda7542hal.so:system/lib/libcoda7542hal.so \
-    $(LOCAL_PATH)/proprietary/lib/libcodecjpegdec.so:system/lib/libcodecjpegdec.so \
-    $(LOCAL_PATH)/proprietary/lib/libcodecjpegenc.so:system/lib/libcodecjpegenc.so \
-    $(LOCAL_PATH)/proprietary/lib/libmedialib.so:system/lib/libmedialib.so \
-    $(LOCAL_PATH)/proprietary/lib/libovdns.so:system/lib/libovdns.so \
-    $(LOCAL_PATH)/proprietary/lib/libPyramidUVDNS.so:system/lib/libPyramidUVDNS.so \
-    $(LOCAL_PATH)/proprietary/lib/libscenedetect.so:system/lib/libscenedetect.so \
-    $(LOCAL_PATH)/proprietary/lib/libextsensorhal.so:system/lib/libextsensorhal.so \
-    $(LOCAL_PATH)/proprietary/lib/libsecnativefeature.so:system/lib/libsecnativefeature.so \
-    $(LOCAL_PATH)/proprietary/lib/libwvm.so:system/lib/libwvm.so 
 
 # GPS
 PRODUCT_COPY_FILES += \
@@ -62,9 +41,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/egl/libEGL_MRVL.so:system/lib/egl/libEGL_MRVL.so \
     $(LOCAL_PATH)/proprietary/lib/egl/libGLESv1_CM_MRVL.so:system/lib/egl/libGLESv1_CM_MRVL.so \
     $(LOCAL_PATH)/proprietary/lib/egl/libGLESv2_MRVL.so:system/lib/egl/libGLESv2_MRVL.so \
-    $(LOCAL_PATH)/proprietary/lib/libgputex.so:system/lib/libgputex.so \
-    $(LOCAL_PATH)/proprietary/lib/libVSC.so:system/lib/libVSC.so \
-    $(LOCAL_PATH)/proprietary/lib/libGLSLC.so:system/lib/libGLSLC.so
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/proprietary/lib/hw/keystore.mrvl.so:system/lib/hw/keystore.mrvl.so \
