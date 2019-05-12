@@ -16,16 +16,16 @@
 
 # Audio
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/proprietary/lib/hw/audio.primary.mrvl.so:system/lib/hw/audio.primary.mrvl.so \
-    $(LOCAL_PATH)/proprietary/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
-    $(LOCAL_PATH)/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
-    $(LOCAL_PATH)/proprietary/lib/libSamsungPreProcess.so:system/lib/libSamsungPreProcess.so \
-    $(LOCAL_PATH)/proprietary/lib/libSamsungPostProcess.so:system/lib/libSamsungPostProcess.so \
-    $(LOCAL_PATH)/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
-    $(LOCAL_PATH)/proprietary/lib/lib_SamsungRec_V04012.so:system/lib/lib_SamsungRec_V04012.so \
     $(LOCAL_PATH)/proprietary/lib/libippsp.so:system/lib/libippsp.so \
     $(LOCAL_PATH)/proprietary/lib/libippvp.so:system/lib/libippvp.so \
-    $(LOCAL_PATH)/proprietary/lib/libaudiodebugtool.so:system/lib/libaudiodebugtool.so
+#    $(LOCAL_PATH)/proprietary/lib/lib_Samsung_SB_AM_for_ICS_v03008.so:system/lib/lib_Samsung_SB_AM_for_ICS_v03008.so \
+#    $(LOCAL_PATH)/proprietary/lib/libsamsungSoundbooster.so:system/lib/libsamsungSoundbooster.so \
+#    $(LOCAL_PATH)/proprietary/lib/libSamsungPostProcess.so:system/lib/libSamsungPostProcess.so \
+#    $(LOCAL_PATH)/proprietary/lib/libSamsungPreProcess.so:system/lib/libSamsungPreProcess.so \
+#    $(LOCAL_PATH)/proprietary/lib/libsamsungRecord.so:system/lib/libsamsungRecord.so \
+#    $(LOCAL_PATH)/proprietary/lib/lib_SamsungRec_V04012.so:system/lib/lib_SamsungRec_V04012.so \
+#    $(LOCAL_PATH)/proprietary/lib/libaudiodebugtool.so:system/lib/libaudiodebugtool.so \
+#    $(LOCAL_PATH)/proprietary/lib/hw/audio.primary.mrvl.so:system/lib/hw/audio.primary.mrvl.so \
 
 # GPS
 PRODUCT_COPY_FILES += \
